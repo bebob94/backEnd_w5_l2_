@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>pagina di informazione</title>
+</head>
+<body>
+<div  th:action="@{/homepage/infoPage/it}" th:object="${infoPage}">
+	<h1 th:text="*{title}"></h1>
+	<h2 th:text="*{info1}"></h2>
+	<p th:text="*{info2}"></p>
+	<p th:text="*{info3}"></p>
+</div>
+</body>
+</html>
